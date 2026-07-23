@@ -1,0 +1,18 @@
+VR STUDIO PERSONALIZADOS - SITE INICIAL
+
+Arquivos:
+- index.html: página principal
+- style.css: visual e responsividade
+- script.js: menu mobile e ano automático
+- assets/logo-vr-studio.png: logo utilizada
+
+Como abrir:
+1. Extraia a pasta.
+2. Clique duas vezes em index.html.
+
+Para publicar gratuitamente:
+- GitHub Pages
+- Netlify
+- Vercel
+
+Os botões de WhatsApp e Instagram já estão configurados.

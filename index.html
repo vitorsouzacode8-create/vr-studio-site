@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VR Studio Personalizados: presentes e produtos personalizados feitos para surpreender.">
+  <title>VR Studio Personalizados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="VR Studio Personalizados">
+      <img src="assets/logo-vr-studio.png" alt="Logo VR Studio Personalizados">
+    </a>
+
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Presentes personalizados com identidade</p>
+        <h1>Transformamos ideias em <span>presentes incríveis.</span></h1>
+        <p class="hero-text">
+          Canecas, camisetas, copos, almofadas e muito mais, criados para
+          eternizar momentos e surpreender quem você ama.
+        </p>
+
+        <div class="actions">
+          <a class="button button-primary"
+             href="https://wa.me/5543991208064?text=Olá%20VR%20Studio!%20Quero%20fazer%20um%20pedido."
+             target="_blank" rel="noopener">
+            Fazer meu pedido
+          </a>
+          <a class="button button-secondary"
+             href="https://instagram.com/vrstudiopersonalizados"
+             target="_blank" rel="noopener">
+            Ver Instagram
+          </a>
+        </div>
+
+        <div class="contacts" id="contato">
+          <span>WhatsApp: (43) 99120-8064</span>
+          <span>WhatsApp: (43) 98808-9220</span>
+          <span>@vrstudiopersonalizados</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="logo-halo"></div>
+        <img src="assets/logo-vr-studio.png" alt="">
+      </div>
+    </section>
+
+    <section class="products" id="produtos">
+      <div class="section-heading">
+        <p class="eyebrow">O que personalizamos</p>
+        <h2>Seu presente, do seu jeito</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <span class="product-icon">☕</span>
+          <h3>Canecas</h3>
+          <p>Modelos clássicos, mágicos e especiais para todas as ocasiões.</p>
+        </article>
+
+        <article class="product-card">
+          <span class="product-icon">👕</span>
+          <h3>Camisetas</h3>
+          <p>Estampas personalizadas para empresas, eventos e presentes.</p>
+        </article>
+
+        <article class="product-card">
+          <span class="product-icon">🎁</span>
+          <h3>Presentes</h3>
+          <p>Produtos únicos preparados para encantar e marcar momentos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo-vr-studio.png" alt="VR Studio Personalizados">
+    <p>© <span id="year"></span> VR Studio Personalizados. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
