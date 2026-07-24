@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escolha produtos personalizados da VR Studio e solicite sua cotação pelo WhatsApp.">
+  <title>Produtos | VR Studio Personalizados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="VR Studio Personalizados">
+      <img src="assets/logo-vr-studio.png" alt="Logo VR Studio Personalizados">
+    </a>
+
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a class="active" href="produtos.html">Produtos</a>
+      <a href="index.html#contato">Contato</a>
+      <button class="nav-cart cart-open-button" type="button">
+        Carrinho <span class="cart-badge" data-cart-count>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="catalog-page">
+    <section class="catalog-hero">
+      <p class="eyebrow">Catálogo em construção</p>
+      <h1>Escolha, adicione e <span>peça sua cotação.</span></h1>
+      <p>
+        Esta é a primeira versão do catálogo. Novos produtos, fotos, modelos e
+        opções de personalização poderão ser incluídos aos poucos.
+      </p>
+    </section>
+
+    <section class="catalog-controls" aria-label="Filtros dos produtos">
+      <label class="search-box">
+        <span>Buscar</span>
+        <input id="product-search" type="search" placeholder="Ex.: caneca, camiseta, copo...">
+      </label>
+
+      <div class="category-filter" aria-label="Categorias">
+        <button class="filter-button active" data-category="todos" type="button">Todos</button>
+        <button class="filter-button" data-category="canecas" type="button">Canecas</button>
+        <button class="filter-button" data-category="vestuario" type="button">Vestuário</button>
+        <button class="filter-button" data-category="acessorios" type="button">Acessórios</button>
+        <button class="filter-button" data-category="decoracao" type="button">Decoração</button>
+      </div>
+    </section>
+
+    <section class="catalog-grid" id="product-grid" aria-live="polite"></section>
+
+    <section class="empty-products" id="empty-products" hidden>
+      <h2>Nenhum produto encontrado</h2>
+      <p>Tente outro nome ou selecione uma categoria diferente.</p>
+    </section>
+  </main>
+
+  <button class="floating-cart cart-open-button" type="button" aria-label="Abrir carrinho">
+    <span>🛒</span>
+    <strong data-cart-count>0</strong>
+  </button>
+
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+
+  <aside class="cart-drawer" id="carrinho" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Sua seleção</p>
+        <h2 id="cart-title">Carrinho de cotação</h2>
+      </div>
+      <button class="cart-close-button" type="button" aria-label="Fechar carrinho">×</button>
+    </div>
+
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-empty" id="cart-empty">
+      <span>🛒</span>
+      <h3>Seu carrinho está vazio</h3>
+      <p>Adicione os produtos que deseja cotar.</p>
+    </div>
+
+    <div class="cart-footer">
+      <label class="cart-notes">
+        <span>Observações da cotação</span>
+        <textarea id="quote-notes" rows="3" placeholder="Ex.: tema, cores, nomes, data do evento..."></textarea>
+      </label>
+
+      <div class="cart-summary">
+        <span>Total de unidades</span>
+        <strong id="cart-total-units">0</strong>
+      </div>
+
+      <button class="button button-primary quote-button" id="quote-button" type="button" disabled>
+        Cotar pelo WhatsApp
+      </button>
+      <button class="clear-cart-button" id="clear-cart-button" type="button" disabled>
+        Limpar carrinho
+      </button>
+      <p class="cart-hint">O WhatsApp será aberto com a lista dos produtos selecionados.</p>
+    </div>
+  </aside>
+
+  <footer>
+    <img src="assets/logo-vr-studio.png" alt="VR Studio Personalizados">
+    <p>© <span data-year></span> VR Studio Personalizados. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script src="produtos.js"></script>
+</body>
+</html>

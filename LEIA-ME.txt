@@ -1,18 +1,32 @@
-VR STUDIO PERSONALIZADOS - SITE INICIAL
+VR STUDIO PERSONALIZADOS - SITE V2
 
-Arquivos:
-- index.html: página principal
-- style.css: visual e responsividade
-- script.js: menu mobile e ano automático
-- assets/logo-vr-studio.png: logo utilizada
+NOVIDADES DESTA VERSÃO
+- Página produtos.html
+- Catálogo com busca e filtros
+- Carrinho de cotação
+- Controle de quantidades
+- Campo de observações
+- Botão que envia a seleção para o WhatsApp
+- Carrinho salvo no navegador com localStorage
+- Layout responsivo para celular e computador
 
-Como abrir:
-1. Extraia a pasta.
-2. Clique duas vezes em index.html.
+ARQUIVOS
+- index.html: página inicial
+- produtos.html: catálogo e carrinho
+- style.css: estilos gerais
+- shared.js: menu, ano e contador compartilhado
+- produtos.js: produtos, filtros, carrinho e WhatsApp
+- assets/logo-vr-studio.png: logo
 
-Para publicar gratuitamente:
-- GitHub Pages
-- Netlify
-- Vercel
+ATUALIZAR NO GITHUB
+1. Extraia este ZIP.
+2. Copie todo o conteúdo de vr_studio_site_v2.
+3. Cole dentro da pasta local do repositório vr-studio-site.
+4. Autorize a substituição dos arquivos existentes.
+5. No GitHub Desktop, faça o commit.
+6. Clique em Push origin.
+7. O GitHub Pages atualizará o site automaticamente.
 
-Os botões de WhatsApp e Instagram já estão configurados.
+IMPORTANTE
+Para adicionar produtos futuramente, edite a lista "products" no arquivo produtos.js.
+O WhatsApp configurado para as cotações é: (43) 99120-8064.
