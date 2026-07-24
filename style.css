@@ -351,7 +351,7 @@ h1 span {
   position: fixed;
   z-index: 70;
   inset: 0;
-  background: rgba(0,0,0,.72);
+ background: rgb(255, 255, 255)
   backdrop-filter: blur(3px);
 }
 .cart-drawer {
